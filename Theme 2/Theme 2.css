@@ -123,44 +123,26 @@ a:hover, *.JobBoardSearchLink:hover, *.JobBoardPostLink:hover, *.JobDetailLink:h
 	background: transparent;
 	border-bottom: none;
 }
-#wrapNav .gradient {
-	width: 100%;
-	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.2))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* IE10+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#33000000', GradientType=0 ); /* IE6-9 */
-	background: linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* W3C */
-	height: 45px;
-	position: absolute;
-}
 #wrapNav .menu li {
 	text-align:center;
-	border-right: 1px solid #dcdcdc;
 }
 #wrapNav .menu li a {
-	font-size:13px;
-	color:#333;
-	font-weight:bold;
-	padding:14px 10px;
-	text-transform:uppercase;
+	font-size: 17px;
+	color: #fff;
+	font-weight: bold;
+	padding: 16px 20px;
+	text-transform: uppercase;
 	text-decoration: none;
 	display: block;
+	font-family: 'Open Sans', sans-serif;
 }
 #wrapNav .menu li:hover, #wrapNav .menu li.selected {
-	background: #557f55;
+	background: #bb1c19;
 }
 #wrapNav .menu li:hover a, #wrapNav .menu li a.selected {
-	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.2))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* IE10+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#33000000', GradientType=0 ); /* IE6-9 */
-	background: linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* W3C */
 	text-decoration: none;
 	color: #ffffff;
+	background: transparent;
 }
 /* ====================================== 
  * INTERNAL MENU
@@ -282,6 +264,7 @@ h6 {
 p {
 	margin:0;
 	padding:0 0 1.4em;
+	font-size: inherit;
 }
 #contentSecondary p {
 	line-height: 1.67em;
@@ -472,7 +455,8 @@ body {
 }
 #header { /* header gradient */
 	margin: 0 auto;
-	min-height: 135px; /* min-height of background image */
+	height: 284px;
+	background: url(//53725.bbnc.bbcust.com/image/header-background.png) bottom no-repeat;
 }
 #header .bodyGutter {
 	position:relative;
@@ -534,7 +518,7 @@ span.logoWords {
 /* =Primary Content Area
 ============================== */
 #wrapContentOuter {
-	width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	background-color:#ffffff;
 }
@@ -598,18 +582,31 @@ span.logoWords {
 }
 /* =Footer
 =============================== */
+#wrapTop {
+	width: 100%;
+	background: url(//53725.bbnc.bbcust.com/image/footer-background.jpg) top no-repeat;
+	clear: both;
+	height: 81px;
+}
 #wrapFooter {
-	width: 1180px;
-	margin: 0 auto;
+	width: 100%;
+	background: #e7e7e7;
+	clear: both;
+}
+#wrapFooterTwo {
+	width: 100%;
+	background: #fff;
 	clear: both;
 }
 #wrapFooter .gutter {
 	padding: 0;
-	width: 100%;
+	width: 1180px;
+	margin: 0 auto;
 }
 #wrapFooterMenu {
 	width: 100%;
 	line-height: 0;
+	padding-top: 25px;
 }
 #wrapFooterMenu .bodyGutter {
 	width:100%;
@@ -634,10 +631,7 @@ span.logoWords {
 	line-height:normal;
 }
 *.footerContactWrap p {
-	padding: 0 10px 10px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	color: #999999;
+	padding: 0 0 1.4em;
 }
 #wrapFooterCopy p {
 	padding: 0;
@@ -646,8 +640,9 @@ span.logoWords {
 *.footerMenuWrap {
 	margin: 0;
 	float:left;
-	width: 275px;
-	padding-right: 100px;
+	width: 325px;
+	padding-left: 50px;
+	padding-right: 55px;
 }
 /**** Footer Menu Wrap Two ****/
 *.footerMenuWrapTwo {
@@ -660,7 +655,7 @@ span.logoWords {
 *.footerContactWrap {
 	margin: 0;
 	float: right;
-	width: 275px;
+	width: 325px;
 }
 *.footerContactWrap a:link, *.footerContactWrap a:visited {
 	color: #FFFFFF;
@@ -808,6 +803,19 @@ span.logoWords {
 }
 #wrapNav .menu li.last {
 	border: 0 none;
+	float: right;
+	margin: -20px 15px 0 0;
+}
+.menuVisit {
+	font-weight: 600;
+	font-size: 16px;
+}
+.menuTempleSinai {
+	font-weight: 700;
+	font-size: 21px;
+}
+#wrapNav .menu li.last:hover {
+	background: transparent;
 }
 /*** List Sub Menus ****/
 #wrapNav .menu .nccUlMenuSub1 {
