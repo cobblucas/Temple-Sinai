@@ -1,0 +1,946 @@
+/* =====================================
+  NetCommunity Spark Theme Two
+======================================== */
+/*
+ * Areas that can be customized with Theme Two:
+ * 1. Utility Bar
+ * 2. Site Logo
+ * 3. Main Navigation
+ * 4. Internal Menu
+ * 5. Footer Contact & Menu
+ * 6. Donate Now Button
+ * 7. Main Page Background
+ */
+ 
+ 
+/* ======================================
+    GLOBAL HEADER STYLES
+======================================== */
+h1, *.SurveyTitle, *.ReportTitle, *.NCC_Forms_Title, *.SearchFormTitle, *.EventCalendarName, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.DiscussionGroupFormTitle, *.JobBoardFormTitle, *.ReportTitle {
+	color: #496c62;
+	font-family: Arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	text-transform: none;
+	letter-spacing: normal;
+	margin: 0 0 6px;
+}
+*.SurveyTitle, *.ReportTitle, *.NCC_Forms_Title, *.SearchFormTitle, *.EventCalendarName, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.DiscussionGroupFormTitle, *.JobBoardFormTitle {
+	padding: 0 0 6px;
+}
+h2, *.LoginSectionHeader, *.LoginFormTitle, *.DonationListingHeading, *.DonationCaptureListingHeading, *.CalendarFormLegend, *.ListViewDateLabel, *.CalendarViewTopMiddle, *.EventSectionHeader, *.DetailCaption, *.NewsReaderFormTitle, *.ProfileFormTitle, *.UpcomingEventTitle, *.RecentEventTitle, *.SubscriptionFormTitle, *.BBAnonymousSubscriptionTitle, *.BBMembershipFormTitle, *.DirectoryFormTitle, *.BBVolOpJobListTitle, *.BBVolOpJobDetailTitle, *.NewsChannelFormTitle, *.PostChannelStoryFormTitle, *.SpellFormTitle, *.BBPollsFormTitle, *.BBNotesTitle, *.ECardWizardHeading, *.ReportsLandingTable caption, *.DiscussionGroupHeadingText, *.SearchJobHeading, *.JobResultsHeading  {
+	color: #496c62;
+	font-family: Arial, helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 16px;
+	margin: 0 0 6px;
+	text-transform: none;
+}
+*.LoginSectionHeader, *.LoginFormTitle, *.DonationListingHeading, *.DonationCaptureListingHeading, *.CalendarFormLegend, *.DirectoryFormTitle, *.CalendarFormLegend, *.ProfileFormTitle, *.DiscussionGroupHeadingCell, *.BBPollsFormTitle, *.NewsChannelFormTitle {
+	padding-bottom: 6px;
+}
+h3, *.ListViewEventDate, *.EventItemTitleTime, *.EventItemTitleName, *.EventItemRegistrationsHeader, *.EventItemRegistrantsEventName, *.NewsChannelItemTitle, *.ReportListingHeading, .myHomeBox th.right {
+	color: #000000;
+	font-family: Arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+#contentSecondary h4 {
+	color: #496c62;
+	font-weight: bold;
+}
+h4 {
+	color: #423833;
+	font-family: Arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+h5 {
+	color: #423833;
+	font-family:inherit;
+	font-size: 12px;
+}
+h6 {
+	color: #000000;
+	font-family: inherit;
+	font-size: 12px;
+}
+/*============================
+	=Other Text Colors
+============================== */
+body, *.ListViewEventSubtitle, *.ListViewEventTime, *.ListViewEventLocation, *.BBFormSelectList, *.BBFormTextArea, *.BBFormTextbox, *.DiscussionGroupMessage, *.DiscussionGroupHeadingText, *.DiscussionTopicListHeader, *.BBNotesTextBox, #wrapFooter h3, #wrapNav .mainNav li .nccUlMenuSub1 li a, *.EventItemTitleDescription {
+	color: #555555;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a, a:link, a:visited, a:active, *.JobBoardSearchLink:link, *.JobBoardSearchLink:visited, *.JobBoardPostLink:link, *.JobBoardPostLink:visited, *.JobDetailLink:link, *.JobDetailLink:visited, *.JobResultsLink:link, *.JobResultsLink:visited, *.DiscussionFooterLink:link, *.DiscussionFooterLink:visited, *.DiscussionTopicLink:link, *.DiscussionTopicLink:visited, *.BBNameLink:link, *.BBNameLink:visited, table.ReportFormTable legend {
+	color: #496c62;
+	text-decoration: none;
+}
+a:hover, *.JobBoardSearchLink:hover, *.JobBoardPostLink:hover, *.JobDetailLink:hover, *.JobResultsLink:hover, *.DiscussionFooterLink:hover, *.DiscussionTopicLink:hover, *.BBNameLink:hover {
+	color: #496c62;
+	text-decoration: underline;
+}
+/* ====================================== 
+ * BACKGROUNDS
+======================================== */
+
+#wrapHeader {
+	background: #423833;
+}
+#BodyId {
+	background: #ffffff;
+}
+.container {
+}
+
+/* ====================================== 
+ * MAIN NAVIGATION
+======================================== */
+
+#wrapNav {
+	background: #fca74f;
+	border-bottom: 1px solid #fff;
+	height: 45px;
+}
+#wrapNav .gradient {
+	width: 100%;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.2))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#33000000', GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* W3C */
+	height: 45px;
+	position: absolute;
+}
+#wrapNav .menu li {
+	text-align: center;
+	border-right: 1px solid #dcdcdc;
+}
+#wrapNav .menu li a {
+	font-size: 13px;
+	color: #333;
+	font-weight: bold;
+	padding: 14px 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+}
+#wrapNav .menu li:hover, #wrapNav .menu li.selected {
+	background: #557f55;
+}
+#wrapNav .menu li:hover a, #wrapNav .menu li a.selected {
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.2))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#33000000', GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* W3C */
+	text-decoration: none;
+	color: #ffffff;
+}
+/*============================
+	=CUSTOM COLORS
+============================== */
+*.BBCalendarTitle, *.BBCalendarNextPrev, *.BBCalendarDayHeader, *.ReportCalendarSelector, #contentSecondary *.mainMenuHover a, #contentSecondary .mainMenuHover a:link {
+	background-color: #496c62; /* Color for header gradient */
+}
+/* Selectors for table headers */
+*.BBModalDialogTitle, *.CHDashBoardSectionHeading, *.ECardSectionSeparator, *.CalendarViewDayHeader, *.FRDashBoardSectionHeading, *.FRManagerDashBoardSectionHeading, *.TransactionManagerGridHeaderCell, *.TransactionManagerSummaryHeaderRow, *.DirectoryListingHeading, *.DiscussionTopicListHeader td, *.SurveyAnswerTableHeaderRow td, *.BBDocumentDisplayHeaderRow, *.JobResultsListHeader, *.BBNotesNoteTopicCell, *.BBNotesNoteNameCell, *.BBNotesNoteLinkCell, *.BBNotesNoteDateCell, *.ReportListingHeading, *.BBVolOpJobListHeader, *.TransactionManagerGridHeaderCell, *.TransactionManagerSummaryHeaderLabel, *.TransactionManagerSummaryHeaderValue, *.BBVolOpJobListHeader td, *.DonationGridHeader td, *.PaymentPartGrid_Header {
+	background-color: #496c62;
+	color: #ffffff;
+	padding: 3px 0 3px 3px;
+	text-align: left;
+}
+/* Border Colors */
+
+*.DirectoryListingHeading a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* ====================================== 
+ * FOOTER CONTACT & MENU
+======================================== */
+
+#wrapFooterCopy {
+	background: none;
+	color: #555555;
+	padding: 10px 0;
+	clear: both;
+}
+/* ====================================== 
+ * DONATE NOW BUTTON
+======================================== */
+
+#donateButton {
+	width:auto;
+	position:absolute;
+	top:50px;
+	right:20px;
+	background:#FCA74F;
+	border-radius:16px;
+	white-space:nowrap;
+}
+#donateButton a {
+	text-align:center;
+	background:-moz-linear-gradient(top, rgba(0,0,0,0) 0, rgba(0,0,0,0.2) 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.2)));
+	background:-webkit-linear-gradient(top, rgba(0,0,0,0) 0, rgba(0,0,0,0.2) 100%);
+	background:-o-linear-gradient(top, rgba(0,0,0,0) 0, rgba(0,0,0,0.2) 100%);
+	background:-ms-linear-gradient(top, rgba(0,0,0,0) 0, rgba(0,0,0,0.2) 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#33000000', GradientType=0);
+	background:linear-gradient(top, rgba(0,0,0,0) 0, rgba(0,0,0,0.2) 100%);
+	display:block;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#fff;
+	padding:12px 12px;
+	border-radius:16px;
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border:1px solid #171717;
+	-moz-box-shadow:0 1px 3px rgba(000,000,000,0.5), inset 0 0 10px rgba(087,087,087,0.7);
+	-webkit-box-shadow:0 1px 3px rgba(000,000,000,0.5), inset 0 0 10px rgba(087,087,087,0.7);
+	text-shadow:0 -1px 0 rgba(000,000,000,0.4), 0px 1px 0 rgba(255,255,255,0.3);
+}
+#donateButton a:hover, #donateButton a.hover {
+	background:#557f55;
+	text-decoration:none;
+}
+
+
+/*============================
+	=Headings and Font Tags
+============================== */
+h1 {
+	margin: 0 0 0.5em;
+}
+h2 {
+	margin: 0 0 0.5em;
+	clear: both;
+}
+h3 {
+	margin: 0;
+	clear: both;
+}
+h4 {
+	margin: 0;
+	font-weight: normal;
+	clear: both;
+}
+h5 {
+	margin: 0;
+	clear: both;
+}
+h6 {
+	margin: 0;
+	font-weight: normal;
+	clear: both;
+}
+p {
+	margin: 0;
+	padding: 0 0 1.4em;
+}
+#contentSecondary p {
+	line-height: 1.67em;
+	font-size: 11px;
+}
+/*===========================
+	=List Styles
+============================== */
+* html ol {
+	margin: 0 0 0 5px;
+}
+*:first-child+html ol {
+	margin: 0 0 0 5px;
+}
+ul {
+	list-style-position: outside;
+	padding: 0 0 1.5em 2em;
+	margin: 0;
+	list-style: disc;
+}
+ul ul {
+	padding-bottom: 0;
+	margin: 0;
+}
+ul li {
+	padding: 0;
+	margin: 0;
+	line-height: 1.5em;
+}
+ol {
+	list-style-position: outside;
+	list-style: decimal;
+	padding: 0 0 1.5em 2em;
+	margin: 0;
+}
+ol ol {
+	list-style: lower-alpha;
+	padding-bottom: 0;
+	margin: 0;
+}
+ol li {
+	padding: 0;
+	margin: 0;
+	line-height: 1.5em;
+}
+ol li li {
+	list-style-type: lower-alpha;
+}
+ol li li li {
+	list-style-type: lower-roman;
+}
+ol li li li li {
+	list-style-type: decimal;
+}
+dl {
+	padding: 0 0 1.5em;
+	line-height: 1.5em;
+}
+dt {
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+dd {
+	padding: 0 0 0 2em;
+	margin: 0;
+}
+/*============================
+	=other tags
+============================== */
+img {
+	vertical-align: bottom;
+}
+blockquote {
+	margin: 0;
+	padding: 0 25px 1.4em;
+}
+hr {
+	background-color: #ddd;
+	color: #ddd;
+	border: 0 none;
+	height: 1px;
+	width: 90%;
+	margin: 15px auto;
+	clear: both;
+}
+table {
+	border-collapse: collapse;
+}
+td {
+	padding: 0;
+}
+/*============================
+	 =Image Styles
+============================== */
+a img {
+	border: 0 none;
+}
+*.imageLeft {
+	float: left;
+	margin: 0 10px 5px 0;
+	border: 1px solid #cccccc;
+	padding: 5px;
+}
+*.imageRight {
+	float: right;
+	margin: 0 0 10px 5px;
+	border: 1px solid #cccccc;
+	padding: 5px;
+}
+*.imageRightNoBorder {
+	float: right;
+	margin: 0 0 10px 5px;
+}
+*.imageBorder {
+	padding: 2px;
+	border: 1px solid #dcdcdc;
+	margin-bottom: 15px;
+}
+*.mainPhoto {
+	padding: 2px;
+	border: 1px solid #dcdcdc;
+}
+img.ui-datepicker-trigger {
+	vertical-align: middle;
+}
+td.DonationCaptureFieldControlCell img {
+	padding: 0 0 2px 5px;
+}
+/* ==============================
+   GLOBAL PAGE ALIGNMENT
+============================== */
+
+/*============================
+	= Main Wrappers
+============================== */
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 75%;
+	line-height: 1.4;
+}
+#wrapHeader {
+	width: 100%;
+}
+#wrapContentOuter, #wrapFooter{
+	width: 980px; /* width of the site including shadow */
+	margin: 0 auto;
+}
+*.bodyGutter, #wrapNav .bodyGutter, #wrapContentInner, #wrapNav .gutter, #header {
+	width: 925px; /* content width (minus shadow) */
+	margin: 0 auto;
+}
+#wrapContentOuter {
+	width: 985px;
+	margin: 0 auto;
+	background-color:#ffffff;
+	clear: both;
+}
+#wrapContentInner {
+	padding: 0;
+	width: 100%;
+	background-color:#ffffff;
+	float: left;
+}
+#wrapContentInner .bodyGutter {
+	padding: 25px 10px 50px;
+}
+*.contentGutter {
+	padding: 0 36px;
+}
+
+/*============================
+	=Header
+============================== */
+
+#header {
+	margin: 0 auto;
+	min-height: 135px; /* min-height of background image */
+}
+#header .bodyGutter {
+	position: relative;
+	width: 100%;
+}
+#headerUtility {
+	float: right;
+	padding: 0;
+	width: auto;
+	position: relative;
+	text-align: right;
+	height: 24px;
+}
+#headerUtility p {
+	padding: 0;
+}
+* html #headerUtility {
+	width: 303px;
+}
+*.threeColumns .lineHeightWrap {
+	line-height: 18px;
+	padding: 0;
+	margin: 0;
+}
+/*============================
+	=SITE LOGO
+============================== */
+
+#headerLogo {
+	padding: 20px 0;
+	float: left;
+	width: auto;
+}
+#headerLogo p {
+	padding: 0;
+}
+/*============================
+	=Primary Content Area
+============================== */
+
+#contentPrimary {
+	float: right;
+	width: 650px;
+	margin: 0;
+	min-height: 400px;
+}
+#contentPrimary .leftCol {
+	width: 49%;
+	float: left;
+	line-height: 0;
+}
+#contentPrimary .rightCol {
+	width: 49%;
+	float: right;
+	line-height: 0;
+}
+#contentPrimary .singleCol {
+	clear: both;
+	width: 100%;
+	line-height: 0;
+}
+#contentPrimary .leftCol *, #contentPrimary .rightCol *, #contentPrimary .singleCol * {
+	line-height: 1.4em;
+}
+#contentPrimary .gutter {
+	padding: 12px 23px 0 0;
+}
+/*============================
+	=Secondary Content Area
+============================== */
+#contentSecondary {
+	float: left;
+	width: 225px;
+	margin: 0;
+	min-height: 400px;
+	padding: 0;
+}
+#contentSecondary .gutter {
+	padding: 25px 0 0 0;
+	clear: both;
+}
+#contentSecondary h2 {
+	padding: 5px 0 12px 12px;
+}
+/*=============================
+	=Footer
+=============================== */
+#wrapFooter {
+	width: 980px;
+	margin: 0 auto;
+	clear: both;
+}
+#wrapFooter .gutter {
+	padding: 0;
+	width: 100%;
+	float: left;
+}
+#wrapFooterMenu {
+	width: 100%;
+	line-height: 0;
+}
+#wrapFooterMenu .bodyGutter {
+	width: 100%;
+	padding: 15px 20px 10px;
+}
+#wrapFooterCopy {
+	text-align: center;
+	width: 100%;
+}
+#wrapFooterCopy .bodyGutter {
+	width: 100%;
+	padding: 0;
+}
+#wrapFooter h3 {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+*.footerMenuWrap *, *.footerContactWrap * {
+	line-height: normal;
+}
+*.footerContactWrap p {
+	padding: 0 10px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #999999;
+}
+#wrapFooterCopy p {
+	padding: 0;
+}
+/*=====================
+	=Footer Menu Wrap 
+========================*/
+*.footerMenuWrap {
+	margin: 0;
+	float: left;
+	padding-left: 10px;
+}
+/*=========================
+	=Footer Contact Wrap 
+===========================*/
+*.footerContactWrap {
+	margin: 0;
+	float: right;
+	text-align: right;
+	width: auto;
+	padding-right: 25px;
+}
+*.footerContactWrap a:link, *.footerContactWrap a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+*.footerContactWrap a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+*.footerContactWrap a:active {
+	text-decoration: none;
+}
+/*==========================
+	=Other Footer Styles 
+============================*/
+*.footerContactBorderWrap {
+	padding-right: 20px;
+	height: 70px;
+	width: auto;
+	float: right;
+}
+/*============================
+	= My Home Styles
+============================== */
+*.myHomeBox th.left, *.myHomeBox th.right {
+	background: none !important;
+}
+*.myHomeBox td.left {
+	background: none !important;
+	padding: 8px 0 6px;
+}
+*.myHomeBox td.right {
+	background: none !important;
+	padding: 8px 12px 6px 6px;
+}
+*.myHomeBox {
+	border-collapse: collapse;
+	margin: 0 0 2em;
+	padding: 0;
+}
+*.myHomeBox th.ProfileDisplayFieldCaption {
+	width: 120px;
+}
+*.myHomeBox td {
+	border-collapse: collapse;
+	font-size: 12px;
+}
+*.myHomeBox td p, *.myHomeBox td h3 {
+	margin: 0;
+	padding: 0;
+}
+*.myHomeBox th.left {
+	width: 8px;
+	padding: 8px 0 6px;
+}
+*.myHomeBox th.right {
+	padding: 8px 12px 6px 6px;
+	width: 600px;
+	text-align: left;
+}
+/* ============================
+    menus
+============================*/
+/* ====================================== 
+ * UTILITY BAR
+======================================== */
+
+#headerUtility .menu a {
+	color: #fff;
+	text-decoration:none;
+	padding: 0 10px;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-height: 24px;
+	border-right: 1px solid #fff;
+}
+#headerUtility .menu a:hover {
+	text-decoration: underline;
+}
+#headerUtility .menu {
+	margin: 0 auto;
+	padding: 0 10px 0 20px;
+	border-collapse:collapse;
+	display: block;
+	height: 18px;
+	float: right;
+}
+#headerUtility .menu li {
+	display: block;
+	padding-right: 0;
+	line-height: 24px;
+	float: left;
+}
+#headerUtility .menu li.first a {
+}
+* html #headerUtility .menu {
+	margin: 0;
+}
+*:first-child+html #headerUtility .menu {
+	margin: 0;
+}
+#headerUtility .menu li.last a {
+	border: none;
+}
+/*============================
+	=Utility Menu
+============================== */
+/* = list based menu*/
+*.utilityMenuList {
+	list-style: none;
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+*.utilityMenuList li {
+	display: inline;
+	width: auto;
+}
+*.utilityMenuList li a {
+	color: #5e5e5e;
+	font-size: 11px;
+	text-decoration: none;
+	padding: 0 6px 0 7px;
+	border-right: 1px solid #5e5e5e;
+	line-height: 1em;
+}
+*.utilityMenuList li.last a {
+	border: 0 none;
+}
+
+/* ====================================== 
+ * INTERNAL MENU
+======================================== */
+
+#contentSecondary .menu li a {
+	display: block;
+	padding: 10px 0 10px 10px;
+	color: #727272;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+#contentSecondary .menu li:hover a,  #contentSecondary .menu li.selected a {
+	color: #FCA74F;
+	font-weight: normal;
+}
+
+
+
+/*============================
+	=Main Navigation
+============================== */
+#wrapNav {
+	width: 100%;
+}
+#wrapNav .gutter {
+	line-height: 0;
+	margin: 0 auto;
+}
+#wrapNav .gutter * {
+	line-height: normal;
+}
+#wrapNav img {
+	vertical-align: baseline;
+}
+/* MainMenu List Based*/
+#wrapNav .menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-position: outside;
+}
+#wrapNav .menu li {
+	position: relative;
+	float: left;
+	padding: 0;
+}
+#wrapNav .menu li.last {
+	border: 0 none;
+}
+/*==========================
+	=List Sub Menus 
+==============================*/
+#wrapNav .menu .nccUlMenuSub1 {
+	position: absolute;
+	left: -50000px;
+	list-style: none;
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
+}
+#wrapNav .menu li:hover .nccUlMenuSub1, #wrapNav .menu li.hover .nccUlMenuSub1 {
+	top: 45px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 206px;
+	border: 1px solid #cdcdcd;
+}
+#wrapNav .menu li .nccUlMenuSub1 li {
+	background-color: #ffffff;
+	float: left;
+	text-align: left;
+	border-bottom: 1px solid #cdcdcd;
+	width: 206px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+#wrapNav .menu li .nccUlMenuSub1 li.last {
+	border-right: 1px solid #cdcdcd;
+}
+#wrapNav .menu li .nccUlMenuSub1 li a {
+	font-family: inherit;
+	font-size: 11px;
+	text-transform: none;
+	display: block;
+	padding: 5px;
+	background-color: #ffffff;
+	text-align: left;
+	color: #333333;
+	text-decoration: none;
+}
+#wrapNav .menu li .nccUlMenuSub1 li:hover, #wrapNav .menu li .nccUlMenuSub1 li:hover a, #wrapNav .menu li .nccUlMenuSub1 li.hover, #wrapNav .menu li .nccUlMenuSub1 li.hover a {
+	color: #ffffff;
+	background: #7a7a7a;
+}
+/*=========================
+	= List 2nd Sub 
+===========================*/
+*.nccUlMenuSub2 {
+	position: absolute;
+	left: -50000px;
+	list-style: none;
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
+}
+*.nccUlMenuSub2 li {
+	padding: 0;
+	margin: 0;
+}
+#wrapNav .menu li .nccUlMenuSub1 li:hover .nccUlMenuSub2, #wrapNav .menu li .nccUlMenuSub1 li.hover .nccUlMenuSub2 {
+	left: 207px;
+	top: 0;
+}
+#wrapNav .menu li .nccUlMenuSub1 li:hover .nccUlMenuSub2 li a, #wrapNav .menu li .nccUlMenuSub1 li.hover .nccUlMenuSub2 li a {
+	background-color: #ffffff;
+	color: #333333;
+}
+#wrapNav .menu li .nccUlMenuSub1 li .nccUlMenuSub2 li:hover, #wrapNav .menu li .nccUlMenuSub2 li:hover a, #wrapNav .menu li .nccUlMenuSub1 li .nccUlMenuSub2 li.hover, #wrapNav .menu li .nccUlMenuSub1 li .nccUlMenuSub2 li.hover a {
+	color: #ffffff;
+	background: #7a7a7a;
+}
+/*============================
+	=Internal Menu
+============================== */
+ 
+#contentSecondary a, #contentSecondary a:link {
+	font-weight: normal;
+}
+ #contentSecondary .menu {
+	width: 200px;
+	float: left;
+	margin: 0;
+	padding-left: 0;
+}
+/*===========================
+	=second level ul 
+=============================*/
+ #contentSecondary .menu ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+#contentSecondary .menu li.selected .nccUlMenuSub1 {
+	display: block;
+}
+ 
+ #contentSecondary .menu li {
+	display: block;
+	background-color: #ffffff;
+}
+ #contentSecondary .menu li.selected .nccUlMenuSub1 li {
+	border-bottom: 0 none;
+}
+#contentSecondary .menu li.selected li.first:hover {
+	border-top: 0 none;
+}
+#contentSecondary .menu li.selected .nccUlMenuSub1 li a {
+	border-bottom: 0 none;
+	padding-left: 40px;
+}
+#contentSecondary .menu li.selected .nccUlMenuSub1 li.first:hover a {
+	border-top: 0 none;
+	padding-top: 12px;
+}
+/*============================
+	=Footer Menu
+============================== */
+*.footerMenu {
+	min-height: 70px;
+	list-style: none;
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: auto;
+}
+*.footerMenu li {
+	float: left;
+	padding: 0 10px 0;
+	margin: 0;
+}
+*.footerMenu li.last {
+	border-right: 0 none;
+}
+*.footerMenu li a {
+	color: #999;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: normal;
+}
+*.footerMenu li:hover a, .footerMenu li:hover a:hover, *.footerMenu li.hover a, *.footerMenu li.hover a:hover {
+	cursor: default;
+	text-decoration: underline;
+}
+*.footerMenu .nccUlMenuSub1 {
+	list-style: none;
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+*.footerMenu li .nccUlMenuSub1 li {
+	float: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+*.footerMenu li .nccUlMenuSub1 li a {
+	text-decoration: underline;
+	font-size: 11px;
+	font-weight: normal;
+}
+/* = One Column Layout
+============================== */
+
+#oneCol #contentPrimary {
+	float: none;
+	margin: 0 auto;
+	width: 100%;
+}
+#oneCol #contentPrimary .gutter {
+	padding: 12px 23px 0;
+}
+#oneCol #contentSecondary {
+	display: none;
+}
+#oneCol #wrapFooterCopy {
+	width: 100%;
+	height: 39px;
+	padding: 5px 0;
+	text-align: center;
+}
+/*===========================
+	clearfix
+============================= */
+.clearfix {clear: both;}
