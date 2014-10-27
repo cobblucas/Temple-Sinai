@@ -98,9 +98,9 @@ a:hover, *.JobBoardSearchLink:hover, *.JobBoardPostLink:hover, *.JobDetailLink:h
 	color: #fff;
 	text-decoration:none;
 	padding: 0 10px;
-	font-size: 10px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: normal;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 	letter-spacing: normal;
 	line-height: 24px;
 	border-right: 1px solid #fff;
@@ -122,6 +122,7 @@ a:hover, *.JobBoardSearchLink:hover, *.JobBoardPostLink:hover, *.JobDetailLink:h
 #wrapNav {
 	background: transparent;
 	border-bottom: none;
+	float: left;
 }
 #wrapNav .menu li {
 	text-align:center;
@@ -130,7 +131,7 @@ a:hover, *.JobBoardSearchLink:hover, *.JobBoardPostLink:hover, *.JobDetailLink:h
 	font-size: 17px;
 	color: #fff;
 	font-weight: bold;
-	padding: 16px 20px;
+	padding: 18px 20px;
 	text-transform: uppercase;
 	text-decoration: none;
 	display: block;
@@ -168,7 +169,7 @@ a:hover, *.JobBoardSearchLink:hover, *.JobBoardPostLink:hover, *.JobDetailLink:h
 #wrapFooterCopy {
 	background: none;
 	color: #555555;
-	padding: 10px 0;
+	padding: 20px 0;
 }
 /* ====================================== 
  * DONATE NOW BUTTON
@@ -455,8 +456,9 @@ body {
 }
 #header { /* header gradient */
 	margin: 0 auto;
-	height: 284px;
+	height: 269px;
 	background: url(//53725.bbnc.bbcust.com/image/header-background.png) bottom no-repeat;
+	position: relative;
 }
 #header .bodyGutter {
 	position:relative;
@@ -482,7 +484,8 @@ span.logoWords {
 	width: auto;
 	position: relative;
 	text-align: right;
-	height: 24px;
+	top: 24px;
+	clear: both;
 }
 #utility p {
 	padding: 0;
@@ -491,11 +494,8 @@ span.logoWords {
 	width: 303px;
 }
 #headerUtility {
-	float:right;
 	padding: 0;
-	width: auto;
-	position: relative;
-	text-align: right;
+	position: absolute;
 	height: 24px;
 	background: #bc1c19;
 	width: 100%
@@ -519,13 +519,14 @@ span.logoWords {
 ============================== */
 #wrapContentOuter {
 	width: 100%;
-	margin: 0 auto;
-	background-color:#ffffff;
 }
 #wrapContentInner {
 	padding: 0;
-	width: 100%;
-	background-color:#ffffff;
+	width: 1200px;
+	min-height: 800px;
+	margin: -25px auto 0;
+	overflow: auto;
+	background: url(//53725.bbnc.bbcust.com/image/Fullscreen_10_24_14_1_28_PM.png) no-repeat;
 }
 #wrapContentInner .bodyGutter {
 	padding: 25px 10px 50px;
@@ -539,7 +540,7 @@ span.logoWords {
 }
 #contentPrimary {
 	float: right;
-	width: 650px;
+	width: 780px;
 	margin: 0;
 	min-height: 400px;
 }
@@ -605,7 +606,7 @@ span.logoWords {
 }
 #wrapFooterMenu {
 	width: 100%;
-	line-height: 0;
+	line-height: normal;
 	padding-top: 25px;
 }
 #wrapFooterMenu .bodyGutter {
@@ -628,10 +629,10 @@ span.logoWords {
 	font-family: 'Libre Baskerville', serif;
 }
 *.footerMenuWrap *, *.footerContactWrap * {
-	line-height:normal;
+
 }
 *.footerContactWrap p {
-	padding: 0 0 1.4em;
+	padding: 0 0 5px;
 }
 #wrapFooterCopy p {
 	padding: 0;
@@ -732,12 +733,15 @@ span.logoWords {
 	width: auto;
 }
 *.utilityMenuList li a {
-	color: #5e5e5e;
-	font-size: 11px;
+	color: #fff;
+	font-size: 12px;
 	text-decoration:none;
 	padding: 0 6px 0 7px;
-	border-right: 1px solid #5e5e5e;
+	border-right: 1px solid #fff;
 	line-height: 1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 *.utilityMenuList li.last a {
 	border: 0 none;
@@ -746,6 +750,9 @@ span.logoWords {
 .utilityMenu,
 .quickSearch {
 	float: right;
+	margin-top: 6px;
+	position: relative;
+	z-index: 1;
 }
 #headerUtility .menu {
 	margin: 0 auto;
@@ -825,14 +832,28 @@ span.logoWords {
 	list-style-position: outside;
 	margin: 0;
 	padding: 0;
+	border-top: 5px solid #bb1c19;
+	border-bottom: 5px solid #bb1c19;
 }
 #wrapNav .menu li:hover .nccUlMenuSub1, #wrapNav .menu li.hover .nccUlMenuSub1 {
-	top: 45px;
+	top: 54px;
 	left: 0;
 	margin: 0;
 	padding: 0;
-	width: 206px;
-	border: 1px solid #cdcdcd;
+	width: auto;
+}
+#wrapNav .menu li:hover ul li {
+	width: 100%;
+}
+#wrapNav .menu li:hover ul li a {
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	border-bottom: none;
+}
+#wrapNav .menu ul {
+	background: #fff;
 }
 #wrapNav .menu li .nccUlMenuSub1 li {
 	background-color: #ffffff;
@@ -845,7 +866,6 @@ span.logoWords {
 	margin: 0;
 }
 #wrapNav .menu li .nccUlMenuSub1 li.last {
-	border-right: 1px solid #cdcdcd;
 }
 #wrapNav .menu li .nccUlMenuSub1 li a {
 	font-family: inherit;
@@ -860,7 +880,13 @@ span.logoWords {
 }
 #wrapNav .menu li .nccUlMenuSub1 li:hover, #wrapNav .menu li .nccUlMenuSub1 li:hover a, #wrapNav .menu li .nccUlMenuSub1 li.hover, #wrapNav .menu li .nccUlMenuSub1 li.hover a {
 	color: #ffffff;
-	background: #7a7a7a;
+}
+#wrapNav .menu li:hover ul li:hover > a {
+	background-color: #e0e0e0;
+	color: #333;
+	border-radius: 0;
+		-webkit-border-radius: 0;
+			-moz-border-radius: 0;
 }
 /** List 2nd Sub **/
 *.nccUlMenuSub2 {
@@ -887,13 +913,45 @@ span.logoWords {
 	color: #ffffff;
 	background: #7a7a7a;
 }
+ /*breadcrumbs menu */
+.breadcrumbs {
+	margin: 0;
+	padding: 0 0 30px;
+}
+.breadcrumbs .menu.mainMenu {
+	list-style: none;
+	padding: 0;
+}
+.breadcrumbs .menu.mainMenu li {
+	display: none;
+}
+.breadcrumbs .menu.mainMenu li.selected {
+	display: inline;
+}
+.breadcrumbs .menu.mainMenu li.parent.selected a {
+
+}
+.breadcrumbs .menu.mainMenu li.selected a {
+	float: left;
+	padding: 0;
+	text-decoration: none !important;
+	color: #454545;
+	font-weight: normal !important;
+}
+.breadcrumbs .menu.mainMenu li.parent.selected a:after {
+	content: '/';
+	padding: 0 5px;
+}
+.breadcrumbs .menu.mainMenu li.parent.selected ul li.last a:after {
+	content: '';
+}
 /* =Internal Menu
 ============================== */
  /* ul styles */
  
  /*top ul */
  #contentSecondary .menu {
-	width: 200px;
+	width: 320px;
 	float: left;
 	margin: 0;
 	padding-left: 0;
