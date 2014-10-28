@@ -26,10 +26,10 @@
     GLOBAL TYPOGRAPHY
 ======================================== */
 h1, *.SurveyTitle, *.ReportTitle, *.NCC_Forms_Title, *.SearchFormTitle, *.EventCalendarName, *.BBMembershipFormTitle, *.BBDocumentFormTitle, *.DiscussionGroupFormTitle, *.JobBoardFormTitle, *.ReportTitle, *.heading {
-	color: #496c62;
-	font-family: Arial, helvetica, sans-serif;
-	font-weight: bold;
-	font-size:24px;
+	color: #bc1c19;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 400;
+	font-size:35px;
 	text-transform: none;
 	letter-spacing: normal;
 	margin: 0 0 6px;
@@ -38,10 +38,10 @@ h1, *.SurveyTitle, *.ReportTitle, *.NCC_Forms_Title, *.SearchFormTitle, *.EventC
 	padding: 0 0 6px;
 }
 h2, *.LoginSectionHeader, *.LoginFormTitle, *.DonationListingHeading, *.DonationCaptureListingHeading, *.CalendarFormLegend, *.ListViewDateLabel, *.CalendarViewTopMiddle, *.EventSectionHeader, *.DetailCaption, *.NewsReaderFormTitle, *.ProfileFormTitle, *.UpcomingEventTitle, *.RecentEventTitle, *.SubscriptionFormTitle, *.BBAnonymousSubscriptionTitle, *.BBMembershipFormTitle, *.DirectoryFormTitle, *.BBVolOpJobListTitle, *.BBVolOpJobDetailTitle, *.NewsChannelFormTitle, *.PostChannelStoryFormTitle, *.SpellFormTitle, *.BBPollsFormTitle, *.BBNotesTitle, *.ECardWizardHeading, *.ReportsLandingTable caption, *.DiscussionGroupHeadingText, *.SearchJobHeading, *.JobResultsHeading, .myHomeBox th.right {
-	color: #496c62;
-	font-family: Arial, helvetica, sans-serif;
-	font-weight:bold;
-	font-size:16px;
+	color: #bc1c19;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 600;
+	font-size:21px;
 	margin: 0 0 6px;
 	text-transform: none;
 }
@@ -456,8 +456,8 @@ body {
 }
 #header { /* header gradient */
 	margin: 0 auto;
-	height: 269px;
-	background: url(//53725.bbnc.bbcust.com/image/header-background.png) bottom no-repeat;
+	height: 267px;
+	background: url(//53725.schoolforms.org/image/header-background.png) bottom no-repeat;
 	position: relative;
 }
 #header .bodyGutter {
@@ -484,7 +484,8 @@ span.logoWords {
 	width: auto;
 	position: relative;
 	text-align: right;
-	top: 24px;
+	top: 40px;
+	right: 35px;
 	clear: both;
 }
 #utility p {
@@ -526,10 +527,10 @@ span.logoWords {
 	min-height: 800px;
 	margin: -25px auto 0;
 	overflow: auto;
-	background: url(//53725.bbnc.bbcust.com/image/Fullscreen_10_24_14_1_28_PM.png) no-repeat;
+	background: url(//53725.schoolforms.org/image/Fullscreen_10_24_14_1_28_PM.png) no-repeat;
 }
 #wrapContentInner .bodyGutter {
-	padding: 25px 10px 50px;
+	padding: 15px 10px 50px 25px;
 }
 *.contentGutter {
 	padding: 0 36px;
@@ -563,7 +564,7 @@ span.logoWords {
 	line-height: 1.4em;
 }
 #contentPrimary .gutter {
-	padding: 12px 23px 0 0;
+	padding: 12px 35px 0 0;
 }
 /* =Secondary Content Area
 ============================== */
@@ -572,20 +573,23 @@ span.logoWords {
 	width:225px;
 	margin: 0;
 	min-height: 400px;
-	padding: 0 !important;
+	padding: 0;
 }
 #contentSecondary .gutter {
-	padding: 25px 0 0 0;
+	padding: 0;
 	clear: both;
 }
 #contentSecondary h2 {
 	padding: 5px 0 12px 12px;
 }
+.sidebarPhoto {
+	margin-bottom: 65px;
+}
 /* =Footer
 =============================== */
 #wrapTop {
 	width: 100%;
-	background: url(//53725.bbnc.bbcust.com/image/footer-background.jpg) top no-repeat;
+	background: url(//53725.schoolforms.org/image/footer-background.jpg) top no-repeat;
 	clear: both;
 	height: 81px;
 }
@@ -732,6 +736,9 @@ span.logoWords {
 	display: inline;
 	width: auto;
 }
+*.utilityMenuList li.menuItem1.first:before {
+	content: url(//53725.schoolforms.org/image/leaf.png);
+}
 *.utilityMenuList li a {
 	color: #fff;
 	font-size: 12px;
@@ -750,9 +757,39 @@ span.logoWords {
 .utilityMenu,
 .quickSearch {
 	float: right;
-	margin-top: 6px;
 	position: relative;
 	z-index: 1;
+}
+.utilityMenu {
+	margin-top: 1px;
+}
+/*QuickSearch */
+.QuickSearchFormTable {
+	border: 1px solid #cdcdcd;
+}
+.quickSearch {
+	margin: 1px 35px 0 25px;
+}
+.QuickSearchTextbox {
+	border: none;
+	background: transparent;
+	margin-right: 5px;
+	color: #fff;
+	padding: 0 0 0 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.QuickSearchButton {
+	background: url(//53725.schoolforms.org/image/search.png) no-repeat 0 0;
+	border: none;
+	width: 20px;
+	height: 20px;
+	display: block;
+	padding: 0;
+	text-indent: -9999px;
+	cursor: pointer;
 }
 #headerUtility .menu {
 	margin: 0 auto;
@@ -785,6 +822,7 @@ span.logoWords {
 ============================== */
 #wrapNav {
 	width: 100%;
+	padding-left: 10px;
 }
 #wrapNav .gutter {
 	line-height: 0;
@@ -811,7 +849,7 @@ span.logoWords {
 #wrapNav .menu li.last {
 	border: 0 none;
 	float: right;
-	margin: -20px 15px 0 0;
+	margin: -20px 22px 0 0;
 }
 .menuVisit {
 	font-weight: 600;
@@ -937,6 +975,7 @@ span.logoWords {
 	text-decoration: none !important;
 	color: #454545;
 	font-weight: normal !important;
+	font-size: 12px;
 }
 .breadcrumbs .menu.mainMenu li.parent.selected a:after {
 	content: '/';
@@ -945,13 +984,67 @@ span.logoWords {
 .breadcrumbs .menu.mainMenu li.parent.selected ul li.last a:after {
 	content: '';
 }
+/*Secondary Menu */
+#contentSecondary .menu.mainMenu {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 30px;
+}
+#contentSecondary .menu.mainMenu li {
+	display: none;
+}
+#contentSecondary .menu.mainMenu li.selected,
+#contentSecondary .menu.mainMenu li.selected li {
+	display: block;
+}
+#contentSecondary .menu.mainMenu li.parent.selected a {
+	padding: 5px 0;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 18px;
+	color: #bc1c19;
+	font-family: 'Libre Baskerville', serif;
+}
+#contentSecondary .menu.mainMenu li.parent > a {
+	border-bottom: 1px dotted #cdcdcd;
+}
+#contentSecondary .menu.mainMenu li.selected li a {
+	padding: 0 15px 0 !important;
+	color: #454545 !important;
+	font-size: 13px !important;
+}
+#contentSecondary .menu.mainMenu li.selected li a:hover {
+	background: #e7e7e7;
+}
+/*Sidebar Buttons */
+.sidebarButton {
+	clear: both;
+	display: block;
+	margin: 5px 0;
+	padding: 5px 20px;
+	width: 225px;
+	background: red;
+	color: #fff;
+	text-transform: capitalize;
+	border-radius: 5px;
+		-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+	background: #e45050; /* Old browsers */
+	background: -moz-linear-gradient(top, #e45050 0%, #d52020 42%, #ae1a1a 64%, #ad1b1b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e45050), color-stop(42%,#d52020), color-stop(64%,#ae1a1a), color-stop(100%,#ad1b1b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e45050 0%,#d52020 42%,#ae1a1a 64%,#ad1b1b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e45050 0%,#d52020 42%,#ae1a1a 64%,#ad1b1b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e45050 0%,#d52020 42%,#ae1a1a 64%,#ad1b1b 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #e45050 0%,#d52020 42%,#ae1a1a 64%,#ad1b1b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e45050', endColorstr='#ad1b1b',GradientType=0 ); /* IE6-9 */
+}
 /* =Internal Menu
 ============================== */
  /* ul styles */
  
  /*top ul */
  #contentSecondary .menu {
-	width: 320px;
+	width: 265px;
 	float: left;
 	margin: 0;
 	padding-left: 0;
@@ -973,7 +1066,8 @@ span.logoWords {
 }
 /* second li */
  #contentSecondary .menu li.selected ul li {
-	border-bottom: 0 none;
+	border-bottom: 1px dotted #cdcdcd;
+	padding: 5px 0;
 }
 #contentSecondary .menu li.selected li.first:hover {
 	border-top: 0 none;
@@ -1037,4 +1131,14 @@ span.logoWords {
 	text-decoration: underline;
 	font-size: 11px;
 	font-weight: normal;
+}
+
+/*Custom Styles */
+.floatLeft {
+	float: left;
+	padding: 0 15px 10px 0;
+}
+.floatRight {
+	float: right;
+	padding: 0 0 10px 5px;
 }
