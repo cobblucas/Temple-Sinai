@@ -45,13 +45,20 @@ h2, *.LoginSectionHeader, *.LoginFormTitle, *.DonationListingHeading, *.Donation
 	margin: 0 0 6px;
 	text-transform: none;
 }
+#internal.home h2 {
+	color: #0575b6;
+	font-size: 20px;
+	font-weight: normal;
+	padding-bottom: 15px;
+	font-family: 'Libre Baskerville', serif;
+}
 /* Header td cells that require padding instead of margin */
 *.LoginSectionHeader, *.LoginFormTitle, *.DonationListingHeading, *.DonationCaptureListingHeading, *.CalendarFormLegend, *.DirectoryFormTitle, *.CalendarFormLegend, *.ProfileFormTitle, *.DiscussionGroupHeadingCell, *.BBPollsFormTitle, *.NewsChannelFormTitle {
 	padding-bottom: 6px;
 }
 h3, *.ListViewEventDate, *.EventItemTitleTime, *.EventItemTitleName, *.EventItemRegistrationsHeader, *.EventItemRegistrantsEventName, *.NewsChannelItemTitle, *.ReportListingHeading, .myHomeBox th.right {
 	color: #000000;
-	font-family: Arial, helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:bold;
 	font-size:14px;
 }
@@ -61,19 +68,19 @@ h3, *.ListViewEventDate, *.EventItemTitleTime, *.EventItemTitleName, *.EventItem
 }
 h4 {
 	color: #423833;
-	font-family: Arial, helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:normal;
 	font-size:12px;
 	text-transform:uppercase;
 }
 h5 {
 	color: #423833;
-	font-family:inherit;
+	font-family: 'Open Sans', sans-serif;
 	font-size:12px;
 }
 h6 {
 	color: #000000;
-	font-family:inherit;
+	font-family: 'Open Sans', sans-serif;
 	font-size:12px;
 }
 /* =Other Text Colors
@@ -83,12 +90,15 @@ body, *.ListViewEventSubtitle, *.ListViewEventTime, *.ListViewEventLocation, *.B
 	font-family: 'Open Sans', sans-serif;
 }
 a, a:link, a:visited, a:active, *.JobBoardSearchLink:link, *.JobBoardSearchLink:visited, *.JobBoardPostLink:link, *.JobBoardPostLink:visited, *.JobDetailLink:link, *.JobDetailLink:visited, *.JobResultsLink:link, *.JobResultsLink:visited, *.DiscussionFooterLink:link, *.DiscussionFooterLink:visited, *.DiscussionTopicLink:link, *.DiscussionTopicLink:visited, *.BBNameLink:link, *.BBNameLink:visited, table.ReportFormTable legend {
-	color:#496c62;
+	color:#454545;
 	text-decoration:none;
 }
 a:hover, *.JobBoardSearchLink:hover, *.JobBoardPostLink:hover, *.JobDetailLink:hover, *.JobResultsLink:hover, *.DiscussionFooterLink:hover, *.DiscussionTopicLink:hover, *.BBNameLink:hover {
-	color:#496c62;
+	color:#454545;
 	text-decoration:underline;
+}
+.BBDocumentDisplayTable a {
+	color: #fff;
 }
 /* ====================================== 
  * UTILITY BAR
@@ -154,13 +164,17 @@ a:hover, *.JobBoardSearchLink:hover, *.JobBoardPostLink:hover, *.JobDetailLink:h
 	padding: 10px 0 10px 10px;
 	color: #727272;
 	text-decoration:none;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 }
 #contentSecondary .menu li:hover a,  #contentSecondary .menu li.selected a {
-	color: #FCA74F;
+	padding: 5px 0;
+	text-decoration: none;
 	font-weight: normal;
+	font-size: 18px;
+	color: #bc1c19;
+	font-family: 'Libre Baskerville', serif;
 }
 /* ====================================== 
  * FOOTER CONTACT & MENU
@@ -194,7 +208,7 @@ a:hover, *.JobBoardSearchLink:hover, *.JobBoardPostLink:hover, *.JobDetailLink:h
 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#33000000', GradientType=0);
 	background:linear-gradient(top, rgba(0,0,0,0) 0, rgba(0,0,0,0.2) 100%);
 	display:block;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size:16px;
 	color:#fff;
 	padding:12px 12px;
@@ -224,7 +238,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', end
 }
 /* Selectors for table headers */
 *.BBModalDialogTitle, *.CHDashBoardSectionHeading, *.ECardSectionSeparator, *.CalendarViewDayHeader, *.FRDashBoardSectionHeading, *.FRManagerDashBoardSectionHeading, *.TransactionManagerGridHeaderCell, *.TransactionManagerSummaryHeaderRow, *.DirectoryListingHeading, *.DiscussionTopicListHeader td, *.SurveyAnswerTableHeaderRow td, *.BBDocumentDisplayHeaderRow, *.JobResultsListHeader, *.BBNotesNoteTopicCell, *.BBNotesNoteNameCell, *.BBNotesNoteLinkCell, *.BBNotesNoteDateCell, *.ReportListingHeading, *.BBVolOpJobListHeader, *.TransactionManagerGridHeaderCell, *.TransactionManagerSummaryHeaderLabel, *.TransactionManagerSummaryHeaderValue, *.BBVolOpJobListHeader td, *.DonationGridHeader td, *.PaymentPartGrid_Header {
-	background-color: #496c62;
+	background-color: #BC1C19;
 	color: #ffffff;
 	padding: 3px 0 3px 3px;
 	text-align: left;
@@ -439,6 +453,9 @@ body {
 	padding: 0;
 	font-size: 13px;
 	line-height:1.4;
+	font-family: 'Open Sans', sans-serif !important;
+	color: #454545 !important;
+	background-color: transparent !important;
 }
 #wrapContentOuter, #wrapFooter, #wrapMedia {
 	width: 1200px; /* width of the site including shadow */
@@ -452,13 +469,32 @@ body {
 ============================== */
 #wrapHeader {
 	width: 100%;
-	padding-top: 0px;
+}
+#internal.home #header { /* header gradient */
+	position: relative;
+	width: 1158px;
+	margin: 0 auto;
+	min-height: 0;
+	background: none;
+	left: 0;
 }
 #header { /* header gradient */
-	margin: 0 auto;
-	height: 267px;
-	background: url(//53725.schoolforms.org/image/header-background.png) bottom no-repeat;
 	position: relative;
+	width: 1158px;
+	margin: 0 auto;
+	min-height: 245px;
+	left: 10px;
+	z-index: 999;
+	background: url(//53725.schoolforms.org/image/header-background.jpg) bottom no-repeat transparent;
+}
+.headerContainer {
+	margin: 0 auto;
+	height: 245px;
+	background: url(//53725.schoolforms.org/image/header-background.jpg) bottom no-repeat transparent;
+	position: absolute;
+	left: 9px;
+	z-index: 999;
+	width: 100%;
 }
 #header .bodyGutter {
 	position:relative;
@@ -477,6 +513,7 @@ span.logoWords {
 	font-size: 39px;
 	color: #bc1c19;
 	font-family: 'Libre Baskerville', serif;
+	vertical-align: middle;
 }
 #utility {
 	float:right;
@@ -484,7 +521,7 @@ span.logoWords {
 	width: auto;
 	position: relative;
 	text-align: right;
-	top: 40px;
+	top: 20px;
 	right: 35px;
 	clear: both;
 }
@@ -499,7 +536,8 @@ span.logoWords {
 	position: absolute;
 	height: 24px;
 	background: #bc1c19;
-	width: 100%
+	width: 100%;
+	z-index: 999;
 }
 #headerUtility .bodyGutter {
 	width: 1180;
@@ -519,7 +557,9 @@ span.logoWords {
 /* =Primary Content Area
 ============================== */
 #wrapContentOuter {
-	width: 100%;
+}
+#internal.home #wrapContentOuter {
+	position: relative;
 }
 #wrapContentInner {
 	padding: 0;
@@ -529,15 +569,23 @@ span.logoWords {
 	overflow: auto;
 	background: url(//53725.schoolforms.org/image/Fullscreen_10_24_14_1_28_PM.png) no-repeat;
 }
+#internal.home #wrapContentInner {
+	background: url(//53725.schoolforms.org/image/home_bg.jpg) top no-repeat;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
 #wrapContentInner .bodyGutter {
 	padding: 15px 10px 50px 25px;
+}
+#internal.home #wrapContentInner .bodyGutter {
+	padding: 0 0 0 18px;
 }
 *.contentGutter {
 	padding: 0 36px;
 }
 #contentPrimary a {
-	font-weight:bold;
-	text-decoration:underline;
+	font-weight: bold;
 }
 #contentPrimary {
 	float: right;
@@ -645,7 +693,7 @@ span.logoWords {
 *.footerMenuWrap {
 	margin: 0;
 	float:left;
-	width: 325px;
+	width: 425px;
 	padding-left: 50px;
 	padding-right: 55px;
 }
@@ -653,7 +701,7 @@ span.logoWords {
 *.footerMenuWrapTwo {
 	margin: 0;
 	float:left;
-	width: 325px;
+	width: 425px;
 	padding-right: 100px;
 }
 /**** Footer Contact Wrap ****/
@@ -758,7 +806,7 @@ span.logoWords {
 .quickSearch {
 	float: right;
 	position: relative;
-	z-index: 1;
+	z-index: 999;
 }
 .utilityMenu {
 	margin-top: 1px;
@@ -878,7 +926,7 @@ span.logoWords {
 	left: 0;
 	margin: 0;
 	padding: 0;
-	width: auto;
+	width: 175px;
 }
 #wrapNav .menu li:hover ul li {
 	width: 100%;
@@ -1038,6 +1086,10 @@ span.logoWords {
 	background: linear-gradient(to bottom, #e45050 0%,#d52020 42%,#ae1a1a 64%,#ad1b1b 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e45050', endColorstr='#ad1b1b',GradientType=0 ); /* IE6-9 */
 }
+.sidebarButton:hover,
+.carousel-caption-body a:hover {
+	text-decoration: none;
+}
 /* =Internal Menu
 ============================== */
  /* ul styles */
@@ -1141,4 +1193,268 @@ span.logoWords {
 .floatRight {
 	float: right;
 	padding: 0 0 10px 5px;
+}
+
+.contentMainOne {
+	float: left;
+	display: block;
+	width: 25%;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-top: 25px;
+}
+.contentMainTwo {
+	float: left;
+	display: block;
+	width: 35%;
+	margin-right: 2%;
+	padding-top: 25px;
+}
+.contentMainThree {
+	float: right;
+	display: block;
+	width: 25%;
+	margin-right: 7%;
+	padding-top: 25px;
+}
+.contentMainThree h4 {
+	text-transform: capitalize;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.contentMainThree img {
+	padding-bottom: 10px;
+}
+.contentMainOne hr,
+.contentMainTwo hr,
+.contentMainThree hr {
+	width: 100%;
+	border-top: 2px dotted #999;
+	margin: 0 auto 15px;
+	height: 0;
+	background-color: transparent;
+}
+.contentMainOne h3,
+.contentMainTwo h3,
+.contentMainThree h3 {
+	color: #bc1c19;
+	clear: none;
+}
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+	height: auto; 
+} 
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+.contentSlideshow {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 32px 0 0;
+	min-height: 640px;
+}
+
+/* Carousel Classes */
+.carousel {
+  position: relative;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+}
+.carousel-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  outline: 0;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  font-family: serif;
+}
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+.carousel-indicators {
+	position: absolute;
+	bottom: 5%;
+	left: 40%;
+	z-index: 15;
+	width: 10%;
+	margin-left: -30%;
+	padding-left: 0;
+	list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+}
+.carousel-indicators .active {
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+}
+.carousel-caption {
+	background: url(//53725.schoolforms.org/image/slide_bg.jpg) no-repeat;
+	position: absolute;
+	height: 400px;
+	width: 300px;
+	left: -20px;
+	bottom: 0;
+	z-index: 10;
+}
+.carousel-caption .sidebarButton {
+	clear: both;
+	display: block;
+	margin: 25px auto 0;
+	padding: 10px;
+	width: 50%;
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+	text-transform: capitalize;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background: #e45050;
+	background: -moz-linear-gradient(top, #e45050 0%, #d52020 42%, #ae1a1a 64%, #ad1b1b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e45050), color-stop(42%,#d52020), color-stop(64%,#ae1a1a), color-stop(100%,#ad1b1b));
+	background: -webkit-linear-gradient(top, #e45050 0%,#d52020 42%,#ae1a1a 64%,#ad1b1b 100%);
+	background: -o-linear-gradient(top, #e45050 0%,#d52020 42%,#ae1a1a 64%,#ad1b1b 100%);
+	background: -ms-linear-gradient(top, #e45050 0%,#d52020 42%,#ae1a1a 64%,#ad1b1b 100%);
+	background: linear-gradient(to bottom, #e45050 0%,#d52020 42%,#ae1a1a 64%,#ad1b1b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e45050', endColorstr='#ad1b1b',GradientType=0 );
+}
+.carousel-caption-body {
+	position: relative;
+	top: 32%;
+	left: 20%;
+	width: 225px;
+	color: #ffffff;
+}
+.carousel-caption-body h3 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: 'Libre Baskerville', serif;
+}
+.carousel-caption .btn {
+  text-shadow: none;
 }
