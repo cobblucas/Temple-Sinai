@@ -45,6 +45,14 @@ h2, *.LoginSectionHeader, *.LoginFormTitle, *.DonationListingHeading, *.Donation
 	margin: 0 0 6px;
 	text-transform: none;
 }
+h2 a {
+	color: #bc1c19 !important;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 600;
+	font-size: 21px;
+	margin: 0 0 6px;
+	text-transform: none;
+}
 #internal.home h2 {
 	color: #0575b6;
 	font-size: 20px;
@@ -69,7 +77,7 @@ h3, *.ListViewEventDate, *.EventItemTitleTime, *.EventItemTitleName, *.EventItem
 h4 {
 	color: #423833;
 	font-family: 'Open Sans', sans-serif;
-	font-weight:normal;
+	font-weight: bold;
 	font-size:12px;
 	text-transform:uppercase;
 }
@@ -96,6 +104,9 @@ a, a:link, a:visited, a:active, *.JobBoardSearchLink:link, *.JobBoardSearchLink:
 a:hover, *.JobBoardSearchLink:hover, *.JobBoardPostLink:hover, *.JobDetailLink:hover, *.JobResultsLink:hover, *.DiscussionFooterLink:hover, *.DiscussionTopicLink:hover, *.BBNameLink:hover {
 	color:#454545;
 	text-decoration:underline;
+}
+a:empty {
+	display: none !important;
 }
 .BBDocumentDisplayTable a {
 	color: #fff;
@@ -259,20 +270,20 @@ h2 {
 	clear:both;
 }
 h3 {
-	margin:0;
+	margin:0 0 0.5em;
 	clear:both;
 }
 h4 {
-	margin:0;
+	margin:0 0 0.5em;
 	font-weight: normal;
 	clear:both;
 }
 h5 {
-	margin:0;
+	margin:0 0 0.5em;
 	clear:both;
 }
 h6 {
-	margin:0;
+	margin:0 0 0.5em;
 	font-weight:normal;
 	clear:both;
 }
@@ -435,7 +446,7 @@ html, body {
 	width: 100%;
 }
 #oneCol #contentPrimary .gutter {
-	padding: 12px 23px 0;
+	padding: 12px 45px 0;
 }
 #oneCol #contentSecondary {
 	display: none;
@@ -612,7 +623,7 @@ span.logoWords {
 	line-height: 1.4em;
 }
 #contentPrimary .gutter {
-	padding: 12px 35px 0 0;
+	padding: 12px 45px 0 0;
 }
 /* =Secondary Content Area
 ============================== */
@@ -690,7 +701,7 @@ span.logoWords {
 	padding: 0;
 }
 /**** Footer Menu Wrap ****/
-*.footerMenuWrap {
+#internal.home *.footerMenuWrap {
 	margin: 0;
 	float:left;
 	width: 425px;
@@ -698,13 +709,31 @@ span.logoWords {
 	padding-right: 55px;
 }
 /**** Footer Menu Wrap Two ****/
-*.footerMenuWrapTwo {
+#internal.home *.footerMenuWrapTwo {
 	margin: 0;
 	float:left;
 	width: 425px;
 	padding-right: 100px;
 }
 /**** Footer Contact Wrap ****/
+#internal.home *.footerContactWrap {
+	margin: 0;
+	float: right;
+	width: 325px;
+}
+*.footerMenuWrap {
+	width: 325px;
+	float:left;
+	margin: 0;
+	padding-left: 50px;
+	padding-right: 55px;
+}
+*.footerMenuWrapTwo {
+	width: 325px;
+	float:left;
+	margin: 0;
+	padding-right: 100px;
+}
 *.footerContactWrap {
 	margin: 0;
 	float: right;
@@ -897,7 +926,7 @@ span.logoWords {
 #wrapNav .menu li.last {
 	border: 0 none;
 	float: right;
-	margin: -20px 22px 0 0;
+	margin: -20px 15px 0 0;
 }
 .menuVisit {
 	font-weight: 600;
@@ -1029,7 +1058,7 @@ span.logoWords {
 	content: '/';
 	padding: 0 5px;
 }
-.breadcrumbs .menu.mainMenu li.parent.selected ul li.last a:after {
+.breadcrumbs .menu.mainMenu li.parent.selected ul li.selected a:after {
 	content: '';
 }
 /*Secondary Menu */
@@ -1184,6 +1213,10 @@ span.logoWords {
 	font-size: 11px;
 	font-weight: normal;
 }
+.BBBackToDirectoryLink {
+	padding-bottom: 10px;
+	display: block;
+}
 
 /*Custom Styles */
 .floatLeft {
@@ -1263,6 +1296,50 @@ span.logoWords {
 	margin: 0 auto;
 	padding: 32px 0 0;
 	min-height: 640px;
+}
+.ProfileDisplayFormTable tr td {
+	padding-bottom: 10px;
+}
+.bbAthMgrFieldCaption,
+.bbAthMgrFieldData {
+	display: inline-block;
+	padding-bottom: 15px;
+}
+.ChannelStoryEditButtonWAI {
+	padding-right: 10px;
+}
+div[id*='divAthSettings'] {
+	margin: 0 0 25px;
+}
+span[id*='lblManagingType'] {
+	font-weight: bold;
+	font-size: 18px;
+}
+.ECardSection {
+	padding: 0 0 20px;
+}
+.BBMessage,
+.ClassAssignmentsToolbar,
+.ClassAnnouncementsTitle,
+.ClassPageRosterTitle,
+.ClassBlogTitle,
+.ClassResourcesTitleToolbar,
+.ClassAveragesToolbar,
+.UPMPartEditToolbar,
+.TeamRosterToolbar,
+.TeamCoachesToolbar,
+.TeamCalendarToolbar,
+.NewsChannelItemTitle {
+	padding: 1em 0;
+	color: #bc1c19;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 600;
+	font-size: 21px;
+	margin: 0 0 6px;
+	text-transform: none;
+} 
+.ClassPageHeaderToolbar {
+	display: none;
 }
 
 /* Carousel Classes */
