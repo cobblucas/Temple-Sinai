@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,800,700,600,300|Open+Sans+Condensed:300,700);
+
 /* =====================================
   NetCommunity Spark Theme Two
 ======================================== */
@@ -111,11 +113,14 @@ a:empty {
 .BBDocumentDisplayTable a {
 	color: #fff;
 }
+span.bb_menuOptionSubLinkText {
+	padding: 5px 0 4px 17px !important;
+}
 /* ====================================== 
  * UTILITY BAR
 ======================================== */
 
-#headerUtility .menu a {
+Utility .menu a {
 	color: #fff;
 	text-decoration:none;
 	padding: 0 10px;
@@ -495,7 +500,7 @@ body {
 	margin: 0 auto;
 	min-height: 245px;
 	left: 10px;
-	z-index: 999;
+	z-index: 400;
 	background: url(//53725.schoolforms.org/image/header-background.jpg) bottom no-repeat transparent;
 }
 .headerContainer {
@@ -548,7 +553,7 @@ span.logoWords {
 	height: 24px;
 	background: #bc1c19;
 	width: 100%;
-	z-index: 999;
+	z-index: 400;
 }
 #headerUtility .bodyGutter {
 	width: 1180;
